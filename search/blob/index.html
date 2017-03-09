@@ -1,38 +1,15 @@
-
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en-US">
     <head>
-        <meta charset="utf-8" />
-        <script type="text/javascript" src="resources/js/redirect.js"></script>
-        <link rel="stylesheet" type="text/css" href="resources/css/default.css" />
+        <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="1; url=https://play.google.com/store/apps/details?id=com.mobinow.tvguide&hl=it">
+        <script type="text/javascript">
+            window.location.href = "https://play.google.com/store/apps/details?id=com.mobinow.tvguide&hl=it"
+        </script>
+        <title>Page Redirection</title>
     </head>
-<body>
-    <div class="title">
-        This is an example of an automatic redirect to Play Store.
-    </div>
-    <div class="subtitle">
-        Redirecting to: Guida TV.
-    </div>
-    <div class="note">
-        NOTE: In Chrome for Android, if the user writes the url manually, it assumes that he does <b>not</b> wish to be redirected outside of the browser. So you want to be redirected to this link or have clicked a link to this url.
-    </div>
-    <script>
-    // You have the whole queryString ready for you here in a key->value form.
-    // In the edge case where there are multiple values, the value is an array.
-    var qs = AppRedirect.queryString;
-    // Here we initiate the redirect process
-    AppRedirect.redirect({
-       // For this, your app need to have category filter: android.intent.category.BROWSABLE
-        android: {
-            'host': 'post/?message=' + encodeURIComponent(qs['message']), // Host/path/querystring part in a custom scheme URL
-            // 'action': '', // Equivalent to ACTION in INTENTs
-            // 'category': '', // Equivalent to CATEGORY in INTENTs
-            // 'component': '', // Equivalent to COMPONENT in INTENTs
-            'scheme': 'tvguide', // Scheme part in a custom scheme URL
-            'package': 'com.mobinow.tvguide', // Package name in Play store
-            'fallback': 'https://play.google.com/store/apps/details?id=com.mobinow.tvguide&hl=it&message=' + qs['message']
-        }
-    });
-    </script>
-</body>
+    <body>
+        <!-- Note: don't tell people to `click` the link, just tell them that it is a link. -->
+        If you are not redirected automatically, follow this <a href='https://play.google.com/store/apps/details?id=com.mobinow.tvguide&hl=it'>link to example</a>.
+    </body>
 </html>
